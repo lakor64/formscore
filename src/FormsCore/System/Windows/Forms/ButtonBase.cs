@@ -32,7 +32,7 @@ using System.Runtime.InteropServices;
 namespace System.Windows.Forms {
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]
-	[Designer ("System.Windows.Forms.Design.ButtonBaseDesigner, " + Consts.AssemblySystem_Design,
+	[Designer ("System.Windows.Forms.Design.ButtonBaseDesigner, " + AssemblyRef.SystemDesign,
 		   "System.ComponentModel.Design.IDesigner")]
 	public abstract class ButtonBase : Control
 	{
@@ -213,7 +213,7 @@ namespace System.Windows.Forms {
 
 		[Localizable(true)]
 		[DefaultValue(-1)]
-		[Editor("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
+		[Editor("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
 		[TypeConverter(typeof(ImageIndexConverter))]
 		[MWFDescription("Index of image to display, if ImageList is used for button face images"), MWFCategory("Appearance")]
 		[RefreshProperties (RefreshProperties.Repaint)]
@@ -236,7 +236,7 @@ namespace System.Windows.Forms {
 
 		[Localizable (true)]
 		[DefaultValue ("")]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[TypeConverter (typeof (ImageKeyConverter))]
 		[MWFCategory("Appearance")]
@@ -277,8 +277,8 @@ namespace System.Windows.Forms {
 		}
 
 		[SettingsBindable (true)]
-		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + Consts.AssemblySystem_Design,
-			 "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + AssemblyRef.SystemDesign,
+			 "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		public override string Text {
 			get { return base.Text; }
 			set { base.Text = value; }

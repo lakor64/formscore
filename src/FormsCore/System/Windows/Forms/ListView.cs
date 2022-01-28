@@ -43,7 +43,7 @@ namespace System.Windows.Forms
 {
 	[DefaultEvent ("SelectedIndexChanged")]
 	[DefaultProperty ("Items")]
-	[Designer ("System.Windows.Forms.Design.ListViewDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.ListViewDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]
 	[Docking (DockingBehavior.Ask)]
@@ -529,7 +529,7 @@ namespace System.Windows.Forms
 			get { return checked_items; }
 		}
 
-		[Editor ("System.Windows.Forms.Design.ColumnHeaderCollectionEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ColumnHeaderCollectionEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Content)]
 		[Localizable (true)]
 		[MergableProperty (false)]
@@ -656,7 +656,7 @@ namespace System.Windows.Forms
 			}
 		}
 
-		[Editor ("System.Windows.Forms.Design.ListViewItemCollectionEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ListViewItemCollectionEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Content)]
 		[Localizable (true)]
 		[MergableProperty (false)]
@@ -803,7 +803,7 @@ namespace System.Windows.Forms
 		[LocalizableAttribute (true)]
 		[MergableProperty (false)]
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Content)]
-		[Editor ("System.Windows.Forms.Design.ListViewGroupCollectionEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ListViewGroupCollectionEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public ListViewGroupCollection Groups {
 			get { return groups; }
 		}

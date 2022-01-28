@@ -32,7 +32,7 @@ namespace System.Windows.Forms {
 	[ComplexBindingProperties ("DataSource", "DataMember")]
 	[DefaultEvent ("CurrentChanged")]
 	[DefaultProperty ("DataSource")]
-	[Designer("System.Windows.Forms.Design.BindingSourceDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer("System.Windows.Forms.Design.BindingSourceDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	public class BindingSource : Component,
 		ICancelAddNew, IDisposable, ISupportInitialize,
 		IBindingListView, IBindingList, ITypedList,
@@ -319,7 +319,7 @@ namespace System.Windows.Forms {
 		}
 
 		[DefaultValue ("")]
-		[Editor("System.Windows.Forms.Design.DataMemberListEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
+		[Editor("System.Windows.Forms.Design.DataMemberListEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
 		[RefreshProperties (RefreshProperties.Repaint)]
 		public string DataMember {
 			get { return datamember; }

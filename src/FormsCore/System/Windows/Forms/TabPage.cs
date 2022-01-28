@@ -35,7 +35,7 @@ namespace System.Windows.Forms {
 	[DefaultEvent("Click")]
 	[DesignTimeVisible(false)]
 	[DefaultProperty("Text")]
-	[Designer("System.Windows.Forms.Design.TabPageDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer("System.Windows.Forms.Design.TabPageDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[ToolboxItem(false)]
 	public class TabPage : Panel {
 		#region Fields
@@ -137,7 +137,7 @@ namespace System.Windows.Forms {
 
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[DefaultValue(-1)]
-		[Editor("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
+		[Editor("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
 		[Localizable(true)]
 		[TypeConverter(typeof(ImageIndexConverter))]
 		public int ImageIndex {
@@ -153,8 +153,8 @@ namespace System.Windows.Forms {
 		[Localizable (true)]
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[DefaultValue ("")]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design,
-			 "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign,
+			 "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		[TypeConverter (typeof (ImageKeyConverter))]
 		public string ImageKey
 		{

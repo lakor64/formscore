@@ -73,8 +73,8 @@ using System.Runtime.InteropServices;
 namespace System.Windows.Forms
 {
 	[DefaultProperty("Images")]
-	[Designer("System.Windows.Forms.Design.ImageListDesigner, " + Consts.AssemblySystem_Design)]
-	[DesignerSerializer("System.Windows.Forms.Design.ImageListCodeDomSerializer, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.Serialization.CodeDomSerializer, " + Consts.AssemblySystem_Design)]
+	[Designer("System.Windows.Forms.Design.ImageListDesigner, " + AssemblyRef.SystemDesign)]
+	[DesignerSerializer("System.Windows.Forms.Design.ImageListCodeDomSerializer, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.Serialization.CodeDomSerializer, " + AssemblyRef.SystemDesign)]
 	[ToolboxItemFilter("System.Windows.Forms")]
 	[TypeConverter(typeof(ImageListConverter))]
 	public sealed class ImageList : System.ComponentModel.Component
@@ -88,7 +88,7 @@ namespace System.Windows.Forms
 		#endregion // Private Fields
 
 		#region Sub-classes
-		[Editor("System.Windows.Forms.Design.ImageCollectionEditor, " + Consts.AssemblySystem_Design, typeof(UITypeEditor))]
+		[Editor("System.Windows.Forms.Design.ImageCollectionEditor, " + AssemblyRef.SystemDesign, typeof(UITypeEditor))]
 		public sealed class ImageCollection : IList, ICollection, IEnumerable
 		{
 			private const int AlphaMask = unchecked((int)0xFF000000);

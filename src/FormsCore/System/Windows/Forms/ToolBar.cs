@@ -41,7 +41,7 @@ namespace System.Windows.Forms
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[DefaultEvent ("ButtonClick")]
 	[DefaultProperty ("Buttons")]
-	[Designer ("System.Windows.Forms.Design.ToolBarDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.ToolBarDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	public class ToolBar : Control
 	{
 		#region Instance Variables

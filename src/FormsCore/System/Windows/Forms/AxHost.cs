@@ -34,7 +34,7 @@ using System.Runtime.Serialization;
 namespace System.Windows.Forms {
 	[MonoTODO("Possibly implement this for Win32; find a way for Linux and Mac")]
 	[DefaultEvent("Enter")]
-	[Designer("System.Windows.Forms.Design.AxHostDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer("System.Windows.Forms.Design.AxHostDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[DesignTimeVisible(false)]
 	[ToolboxItem(false)]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
@@ -131,7 +131,7 @@ namespace System.Windows.Forms {
 			
 		#region AxHost.State Class
 		[Serializable]
-		[TypeConverter("System.ComponentModel.TypeConverter, " + Consts.AssemblySystem)]
+		[TypeConverter("System.ComponentModel.TypeConverter, " + AssemblyRef.System)]
 		public class State : ISerializable {
 			public State (Stream ms, int storageType, bool manualUpdate, string licKey)
 			{

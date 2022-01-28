@@ -40,7 +40,7 @@ namespace System.Windows.Forms
 	[ClassInterfaceAttribute (ClassInterfaceType.AutoDispatch)]
 	[DefaultEvent ("SplitterMoved")]
 	[Docking (DockingBehavior.AutoDock)]
-	[Designer ("System.Windows.Forms.Design.SplitContainerDesigner, " + Consts.AssemblySystem_Design)]
+	[Designer ("System.Windows.Forms.Design.SplitContainerDesigner, " + AssemblyRef.SystemDesign)]
 	public class SplitContainer : ContainerControl
 		, ISupportInitialize
 	{

@@ -29,7 +29,7 @@ using System.ComponentModel;
 
 namespace System.Windows.Forms {
 
-	[Designer ("System.Windows.Forms.Design.DataGridViewColumnDesigner, " + Consts.AssemblySystem_Design,
+	[Designer ("System.Windows.Forms.Design.DataGridViewColumnDesigner, " + AssemblyRef.SystemDesign,
 		   "System.ComponentModel.Design.IDesigner")]
 	[TypeConverter (typeof (DataGridViewColumnConverter))]
 	[ToolboxItem ("")]
@@ -129,9 +129,9 @@ namespace System.Windows.Forms {
 
 		[Browsable (true)]
 		[DefaultValue ("")]
-		[Editor ("System.Windows.Forms.Design.DataGridViewColumnDataPropertyNameEditor, " + Consts.AssemblySystem_Design,
+		[Editor ("System.Windows.Forms.Design.DataGridViewColumnDataPropertyNameEditor, " + AssemblyRef.SystemDesign,
 			 typeof (System.Drawing.Design.UITypeEditor))]
-		[TypeConverter ("System.Windows.Forms.Design.DataMemberFieldConverter, " + Consts.AssemblySystem_Design)]
+		[TypeConverter ("System.Windows.Forms.Design.DataMemberFieldConverter, " + AssemblyRef.SystemDesign)]
 		public string DataPropertyName {
 			get { return dataPropertyName; }
 			set {

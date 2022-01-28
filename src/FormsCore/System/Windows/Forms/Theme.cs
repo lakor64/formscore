@@ -200,7 +200,7 @@ namespace System.Windows.Forms
 		private void SetSystemColors (KnownColor kc, Color value)
 		{
 			if (knownColorTable == null) {
-				Type knownColorTableClass = Type.GetType ("System.Drawing.KnownColorTable, " + Consts.AssemblySystem_Drawing);
+				Type knownColorTableClass = Type.GetType ("System.Drawing.KnownColorTable, " + AssemblyRef.SystemDrawing);
 				if (knownColorTableClass != null)
 				{
 					MethodInfo ensureMethod = knownColorTableClass.GetMethod ("EnsureColorTable", BindingFlags.Static | BindingFlags.NonPublic);

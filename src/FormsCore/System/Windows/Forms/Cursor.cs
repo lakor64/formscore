@@ -33,7 +33,7 @@ using System.Runtime.Serialization;
 using System.Reflection;
 
 namespace System.Windows.Forms {
-	[Editor("System.Drawing.Design.CursorEditor, " + Consts.AssemblySystem_Drawing_Design, typeof(System.Drawing.Design.UITypeEditor))]
+	[Editor("System.Drawing.Design.CursorEditor, " + AssemblyRef.SystemDrawingDesign, typeof(System.Drawing.Design.UITypeEditor))]
 	[Serializable]
 	[TypeConverter(typeof(CursorConverter))]
 	public sealed class Cursor : IDisposable, ISerializable {

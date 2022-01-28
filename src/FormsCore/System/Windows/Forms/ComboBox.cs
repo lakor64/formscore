@@ -39,7 +39,7 @@ namespace System.Windows.Forms
 {
 	[DefaultProperty("Items")]
 	[DefaultEvent("SelectedIndexChanged")]
-	[Designer ("System.Windows.Forms.Design.ComboBoxDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.ComboBoxDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[DefaultBindingProperty ("Text")]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible(true)]
@@ -213,8 +213,8 @@ namespace System.Windows.Forms
 		[Browsable (true)]
 		[EditorBrowsable (EditorBrowsableState.Always)]
 		[Localizable (true)]
-		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + Consts.AssemblySystem_Design,
-			 "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + AssemblyRef.SystemDesign,
+			 "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		public AutoCompleteStringCollection AutoCompleteCustomSource { 
 			get {
 				if(auto_complete_custom_source == null) {
@@ -561,7 +561,7 @@ namespace System.Windows.Forms
 
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Content)]
 		[Localizable (true)]
-		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[MergableProperty (false)]
 		[MWFCategory("Data")]
 		public ComboBox.ObjectCollection Items {

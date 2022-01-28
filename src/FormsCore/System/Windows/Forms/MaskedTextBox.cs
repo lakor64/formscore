@@ -43,7 +43,7 @@ namespace System.Windows.Forms
 	[ComVisible (true)]
 	[DefaultProperty ("Mask")]
 	[DefaultEvent ("MaskInputRejected")]
-	[Designer ("System.Windows.Forms.Design.MaskedTextBoxDesigner, " + Consts.AssemblySystem_Design)]
+	[Designer ("System.Windows.Forms.Design.MaskedTextBoxDesigner, " + AssemblyRef.SystemDesign)]
 	[DefaultBindingProperty ("Text")]
 	public class MaskedTextBox : TextBoxBase
 	{
@@ -544,7 +544,7 @@ namespace System.Windows.Forms
 		}
 		
 		[Localizable (true)]
-		[Editor ("System.Windows.Forms.Design.MaskPropertyEditor, " + Consts.AssemblySystem_Design, typeof (UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.MaskPropertyEditor, " + AssemblyRef.SystemDesign, typeof (UITypeEditor))]
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[MergablePropertyAttribute (false)]
 		[DefaultValue ("")]
@@ -713,7 +713,7 @@ namespace System.Windows.Forms
 		}
 		
 		[Bindable (true)]
-		[Editor ("System.Windows.Forms.Design.MaskedTextBoxTextEditor, " + Consts.AssemblySystem_Design, typeof (UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.MaskedTextBoxTextEditor, " + AssemblyRef.SystemDesign, typeof (UITypeEditor))]
 		[Localizable (true)]
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[DefaultValue ("")]

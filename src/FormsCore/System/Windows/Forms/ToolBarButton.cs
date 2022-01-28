@@ -35,7 +35,7 @@ using System.Drawing.Imaging;
 namespace System.Windows.Forms
 {
 	[DefaultProperty ("Text")]
-	[Designer ("System.Windows.Forms.Design.ToolBarButtonDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.ToolBarButtonDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[DesignTimeVisible (false)]
 	[ToolboxItem (false)]
 	public class ToolBarButton : Component
@@ -121,7 +121,7 @@ namespace System.Windows.Forms
 
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[DefaultValue (-1)]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[Localizable (true)]
 		[TypeConverter (typeof (ImageIndexConverter))]
 		public int ImageIndex {
@@ -147,7 +147,7 @@ namespace System.Windows.Forms
 
 		[Localizable (true)]
 		[DefaultValue ("")]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[TypeConverter (typeof (ImageKeyConverter))]
 		public string ImageKey {

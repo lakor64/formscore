@@ -41,7 +41,7 @@ namespace System.Windows.Forms
 {
 	[DefaultProperty("Items")]
 	[DefaultEvent("SelectedIndexChanged")]
-	[Designer ("System.Windows.Forms.Design.ListBoxDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.ListBoxDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[DefaultBindingProperty ("SelectedValue")]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]
@@ -428,7 +428,7 @@ namespace System.Windows.Forms
 
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Content)]
 		[Localizable (true)]
-		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[MergableProperty (false)]
 		public ObjectCollection Items {
 			get { return items; }

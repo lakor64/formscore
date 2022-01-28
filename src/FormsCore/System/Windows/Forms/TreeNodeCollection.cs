@@ -30,7 +30,7 @@ using System.Globalization;
 using System.Collections.Generic;
 
 namespace System.Windows.Forms {
-	[Editor("System.Windows.Forms.Design.TreeNodeCollectionEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
+	[Editor("System.Windows.Forms.Design.TreeNodeCollectionEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
 	public class TreeNodeCollection : IList, ICollection, IEnumerable {
 
 		private static readonly int OrigSize = 50;

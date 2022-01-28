@@ -364,7 +364,7 @@ namespace System.Windows.Forms
 
 		[DefaultValue (-1)]
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Hidden)]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design,
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign,
 			 typeof (System.Drawing.Design.UITypeEditor))]
 		[Localizable (true)]
 		[RefreshProperties (RefreshProperties.Repaint)]
@@ -387,7 +387,7 @@ namespace System.Windows.Forms
 		[DefaultValue ("")]
 		[LocalizableAttribute (true)]
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Hidden)]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design,
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign,
 			 typeof (System.Drawing.Design.UITypeEditor))]
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[TypeConverter (typeof (ImageKeyConverter))]
@@ -533,7 +533,7 @@ namespace System.Windows.Forms
 		}
 
 		[DefaultValue (-1)]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design,
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign,
 			 typeof (System.Drawing.Design.UITypeEditor))]
 		[Localizable (true)]
 		[RefreshProperties (RefreshProperties.Repaint)]
@@ -550,7 +550,7 @@ namespace System.Windows.Forms
 		}
 
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Hidden)]
-		[Editor ("System.Windows.Forms.Design.ListViewSubItemCollectionEditor, " + Consts.AssemblySystem_Design,
+		[Editor ("System.Windows.Forms.Design.ListViewSubItemCollectionEditor, " + AssemblyRef.SystemDesign,
 			 typeof (System.Drawing.Design.UITypeEditor))]
 		public ListViewSubItemCollection SubItems {
 			get {

@@ -41,7 +41,7 @@ namespace System.Windows.Forms
 	[DefaultEvent("LinkClicked")]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]
-	[ToolboxItem ("System.Windows.Forms.Design.AutoSizeToolboxItem," + Consts.AssemblySystem_Design)]
+	[ToolboxItem ("System.Windows.Forms.Design.AutoSizeToolboxItem," + AssemblyRef.SystemDesign)]
 	public class LinkLabel : Label, IButtonControl
 	{
 		/* Encapsulates a piece of text (regular or link)*/
@@ -171,7 +171,7 @@ namespace System.Windows.Forms
 		}
 
 		[Localizable (true)]
-		[Editor ("System.Windows.Forms.Design.LinkAreaEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]				
+		[Editor ("System.Windows.Forms.Design.LinkAreaEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]				
 		[RefreshProperties (RefreshProperties.Repaint)]
 		public LinkArea LinkArea {
 			get { return link_area;}

@@ -34,8 +34,8 @@ namespace System.Windows.Forms {
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]
 	[DefaultBindingProperty ("Checked")]
-	[ToolboxItem ("System.Windows.Forms.Design.AutoSizeToolboxItem," + Consts.AssemblySystem_Design)]
-	[Designer ("System.Windows.Forms.Design.RadioButtonDesigner, " + Consts.AssemblySystem_Design)]
+	[ToolboxItem ("System.Windows.Forms.Design.AutoSizeToolboxItem," + AssemblyRef.SystemDesign)]
+	[Designer ("System.Windows.Forms.Design.RadioButtonDesigner, " + AssemblyRef.SystemDesign)]
 	public class RadioButton : ButtonBase {
 		#region Local Variables
 		internal Appearance		appearance;

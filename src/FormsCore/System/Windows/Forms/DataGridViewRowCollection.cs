@@ -30,8 +30,8 @@ using System.ComponentModel.Design.Serialization;
 
 namespace System.Windows.Forms
 	{
-	[DesignerSerializerAttribute ("System.Windows.Forms.Design.DataGridViewRowCollectionCodeDomSerializer, " + Consts.AssemblySystem_Design,
-				      "System.ComponentModel.Design.Serialization.CodeDomSerializer, " + Consts.AssemblySystem_Design)]
+	[DesignerSerializerAttribute ("System.Windows.Forms.Design.DataGridViewRowCollectionCodeDomSerializer, " + AssemblyRef.SystemDesign,
+				      "System.ComponentModel.Design.Serialization.CodeDomSerializer, " + AssemblyRef.SystemDesign)]
 	[ListBindable (false)]
 	public class DataGridViewRowCollection : IList, ICollection, IEnumerable
 	{

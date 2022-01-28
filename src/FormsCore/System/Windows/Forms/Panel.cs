@@ -34,7 +34,7 @@ using System.Runtime.InteropServices;
 namespace System.Windows.Forms {
 	[DefaultProperty("BorderStyle")]
 	[DefaultEvent("Paint")]
-	[Designer ("System.Windows.Forms.Design.PanelDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.PanelDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[Docking (DockingBehavior.Ask)]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]

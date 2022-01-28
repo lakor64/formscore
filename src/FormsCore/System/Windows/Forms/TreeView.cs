@@ -37,7 +37,7 @@ namespace System.Windows.Forms {
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[DefaultProperty("Nodes")]
 	[DefaultEvent("AfterSelect")]
-	[Designer("System.Windows.Forms.Design.TreeViewDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer("System.Windows.Forms.Design.TreeViewDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	public class TreeView : Control {
 		#region Fields
 		private string path_separator = "\\";
@@ -234,7 +234,7 @@ namespace System.Windows.Forms {
 		[RelatedImageList ("ImageList")]
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[TypeConverter (typeof (NoneExcludedImageIndexConverter))]
-		[Editor("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
+		[Editor("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
 		[Localizable(true)]
 		public int ImageIndex {
 			get { return image_index; }
@@ -360,7 +360,7 @@ namespace System.Windows.Forms {
 		[DefaultValue (-1)]
 		[RelatedImageList ("ImageList")]
 		[TypeConverter (typeof (NoneExcludedImageIndexConverter))]
-		[Editor("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
+		[Editor("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
 		[Localizable(true)]
 		public int SelectedImageIndex {
 			get { return selected_image_index; }
@@ -593,7 +593,7 @@ namespace System.Windows.Forms {
 		[RelatedImageList ("ImageList")]
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[TypeConverter (typeof (ImageKeyConverter))]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public string ImageKey {
 			get { return image_key; }
 			set {
@@ -610,7 +610,7 @@ namespace System.Windows.Forms {
 		[RelatedImageList ("ImageList")]
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[TypeConverter (typeof (ImageKeyConverter))]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public string SelectedImageKey {
 			get { return selected_image_key; }
 			set {

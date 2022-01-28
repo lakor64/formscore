@@ -367,7 +367,7 @@ namespace System.Windows.Forms
 		[RelatedImageList ("TreeView.ImageList")]
 		[TypeConverter (typeof (TreeViewImageIndexConverter))]
 		[RefreshProperties (RefreshProperties.Repaint)]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[Localizable(true)]
 		public int ImageIndex {
 			get { return image_index; }
@@ -387,7 +387,7 @@ namespace System.Windows.Forms
 		[RelatedImageList ("TreeView.ImageList")]
 		[TypeConverter (typeof (TreeViewImageKeyConverter))]
 		[RefreshProperties (RefreshProperties.Repaint)]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public string ImageKey {
 			get { return image_key; }
 			set {
@@ -572,7 +572,7 @@ namespace System.Windows.Forms
 		[RelatedImageList ("TreeView.ImageList")]
 		[TypeConverter (typeof (TreeViewImageIndexConverter))]
 		[RefreshProperties (RefreshProperties.Repaint)]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[Localizable (true)]
 		public int SelectedImageIndex {
 			get { return selected_image_index; }
@@ -584,7 +584,7 @@ namespace System.Windows.Forms
 		[RelatedImageList ("TreeView.ImageList")]
 		[TypeConverter (typeof (TreeViewImageKeyConverter))]
 		[RefreshProperties (RefreshProperties.Repaint)]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public string SelectedImageKey {
 			get { return selected_image_key; }
 			set { selected_image_key = value; }
@@ -595,7 +595,7 @@ namespace System.Windows.Forms
 		[RelatedImageList ("TreeView.StateImageList")]
 		[TypeConverter (typeof (NoneExcludedImageIndexConverter))]
 		[RefreshProperties (RefreshProperties.Repaint)]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public int StateImageIndex {
 			get { return state_image_index; }
 			set {
@@ -612,7 +612,7 @@ namespace System.Windows.Forms
 		[RelatedImageList ("TreeView.StateImageList")]
 		[TypeConverter (typeof (ImageKeyConverter))]
 		[RefreshProperties (RefreshProperties.Repaint)]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public string StateImageKey {
 			get { return state_image_key; }
 			set {

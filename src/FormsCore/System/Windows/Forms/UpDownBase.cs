@@ -37,7 +37,7 @@ namespace System.Windows.Forms
 {
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]
-	[Designer("System.Windows.Forms.Design.UpDownBaseDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer("System.Windows.Forms.Design.UpDownBaseDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	public abstract class UpDownBase : ContainerControl {
 		#region UpDownSpinner Sub-class
 		internal sealed class UpDownSpinner : Control {

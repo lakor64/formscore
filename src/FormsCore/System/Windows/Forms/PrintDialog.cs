@@ -37,7 +37,7 @@ using System.Reflection;
 
 namespace System.Windows.Forms
 {
-	[Designer ("System.Windows.Forms.Design.PrintDialogDesigner, " + Consts.AssemblySystem_Design,
+	[Designer ("System.Windows.Forms.Design.PrintDialogDesigner, " + AssemblyRef.SystemDesign,
 		   "System.ComponentModel.Design.IDesigner")]
 	[DefaultProperty("Document")]
 	public sealed class PrintDialog : CommonDialog {

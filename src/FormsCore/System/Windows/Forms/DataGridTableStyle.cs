@@ -326,7 +326,7 @@ namespace System.Windows.Forms
 			}
 		}
 
-		[Editor("System.Windows.Forms.Design.DataGridTableStyleMappingNameEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
+		[Editor("System.Windows.Forms.Design.DataGridTableStyleMappingNameEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
 		[DefaultValue ("")]
 		public string MappingName {
 			get { return mapping_name; }

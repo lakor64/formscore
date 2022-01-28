@@ -33,7 +33,7 @@ using System.Drawing.Text;
 namespace System.Windows.Forms {
 	[DefaultProperty("Text")]
 	[DefaultEvent("MouseDoubleClick")]
-	[Designer ("System.Windows.Forms.Design.NotifyIconDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.NotifyIconDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[ToolboxItemFilter("System.Windows.Forms", ToolboxItemFilterType.Allow)]
 	public sealed class NotifyIcon : Component {
 		#region Local Variables
@@ -563,8 +563,8 @@ namespace System.Windows.Forms {
 
 		[Localizable(true)]
 		[DefaultValue ("")]
-		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + Consts.AssemblySystem_Design,
-			 "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + AssemblyRef.SystemDesign,
+			 "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		public string BalloonTipText {
 			get { return this.balloon_text; }
 			set {
@@ -638,7 +638,7 @@ namespace System.Windows.Forms {
 		}
 
 		[DefaultValue ("")]
-		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + Consts.AssemblySystem_Design,
+		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + AssemblyRef.SystemDesign,
 			 typeof (System.Drawing.Design.UITypeEditor))]
 		[Localizable (true)]
 		public string Text {

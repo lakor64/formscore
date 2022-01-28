@@ -32,7 +32,7 @@ using System.Runtime.InteropServices;
 namespace System.Windows.Forms {
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]
-	[Designer ("System.Windows.Forms.Design.ButtonBaseDesigner, " + Consts.AssemblySystem_Design,
+	[Designer ("System.Windows.Forms.Design.ButtonBaseDesigner, " + AssemblyRef.SystemDesign,
 		   "System.ComponentModel.Design.IDesigner")]
 	public class Button : ButtonBase, IButtonControl {
 		#region Local variables

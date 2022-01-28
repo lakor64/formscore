@@ -79,7 +79,7 @@ namespace System.Windows.Forms
 		[Localizable (true)]
 		[EditorBrowsable (EditorBrowsableState.Always)]
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Content)]
-		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public AutoCompleteStringCollection AutoCompleteCustomSource {
 			get { return this.TextBox.AutoCompleteCustomSource; }
 			set { this.TextBox.AutoCompleteCustomSource = value; }
@@ -152,7 +152,7 @@ namespace System.Windows.Forms
 
 		[Localizable (true)]
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Hidden)]
-		[Editor ("System.Windows.Forms.Design.StringArrayEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.StringArrayEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public string[] Lines {
 			get { return this.TextBox.Lines; }
 			set { this.TextBox.Lines = value; }

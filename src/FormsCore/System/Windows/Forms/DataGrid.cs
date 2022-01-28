@@ -110,7 +110,7 @@ namespace System.Windows.Forms
 
 	[DefaultEvent("Navigate")]
 	[DefaultProperty("DataSource")]
-	[Designer("System.Windows.Forms.Design.DataGridDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer("System.Windows.Forms.Design.DataGridDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[ComplexBindingProperties ("DataSource", "DataMember")]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]
@@ -612,7 +612,7 @@ namespace System.Windows.Forms
 		}
 
 		[DefaultValue(null)]
-		[Editor ("System.Windows.Forms.Design.DataMemberListEditor, " + Consts.AssemblySystem_Design, "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.Windows.Forms.Design.DataMemberListEditor, " + AssemblyRef.SystemDesign, "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		public string DataMember {
 			get { return datamember; }
 			set {

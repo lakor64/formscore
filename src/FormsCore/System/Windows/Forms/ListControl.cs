@@ -127,7 +127,7 @@ namespace System.Windows.Forms
 		
 		[DefaultValue ("")]
 		[MergableProperty (false)]
-		[Editor ("System.Windows.Forms.Design.FormatStringEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.FormatStringEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public string FormatString {
 			get { return format_string; }
 			set {
@@ -177,8 +177,8 @@ namespace System.Windows.Forms
 		}
 
 		[DefaultValue("")]
-		[Editor("System.Windows.Forms.Design.DataMemberFieldEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
-		[TypeConverter("System.Windows.Forms.Design.DataMemberFieldConverter, " + Consts.AssemblySystem_Design)]
+		[Editor("System.Windows.Forms.Design.DataMemberFieldEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
+		[TypeConverter("System.Windows.Forms.Design.DataMemberFieldConverter, " + AssemblyRef.SystemDesign)]
 		[MWFCategory("Data")]
 		public string DisplayMember {
 			get { 
@@ -237,7 +237,7 @@ namespace System.Windows.Forms
 		}
 
 		[DefaultValue("")]
-		[Editor("System.Windows.Forms.Design.DataMemberFieldEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
+		[Editor("System.Windows.Forms.Design.DataMemberFieldEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
 		[MWFCategory("Data")]
 		public string ValueMember {
 			get { return value_member.BindingMember; }

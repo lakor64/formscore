@@ -35,7 +35,7 @@ using System.Collections;
 namespace System.Windows.Forms {
 	[DefaultEvent ("HelpRequest")]
 	[DefaultProperty ("SelectedPath")]
-	[Designer ("System.Windows.Forms.Design.FolderBrowserDialogDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.FolderBrowserDialogDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	public sealed class FolderBrowserDialog : CommonDialog
 	{
 		#region Local Variables
@@ -212,7 +212,7 @@ namespace System.Windows.Forms {
 		
 		[Browsable(true)]
 		[DefaultValue("")]
-		[Editor("System.Windows.Forms.Design.SelectedPathEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
+		[Editor("System.Windows.Forms.Design.SelectedPathEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
 		[Localizable(true)]
 		public string SelectedPath {
 			set {

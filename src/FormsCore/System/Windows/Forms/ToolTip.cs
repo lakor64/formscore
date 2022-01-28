@@ -575,8 +575,8 @@ namespace System.Windows.Forms {
 			return false;
 		}
 
-		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + Consts.AssemblySystem_Design,
-			 "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + AssemblyRef.SystemDesign,
+			 "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		[Localizable (true)]
 		[DefaultValue ("")]
 		public string GetToolTip (Control control)

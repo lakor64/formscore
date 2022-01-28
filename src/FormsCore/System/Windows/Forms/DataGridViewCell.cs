@@ -362,7 +362,7 @@ namespace System.Windows.Forms {
 		[Bindable (true, BindingDirection.OneWay)]
 		[DefaultValue (null)]
 		[Localizable (false)]
-		[TypeConverter ("System.ComponentModel.StringConverter, " + Consts.AssemblySystem)]
+		[TypeConverter ("System.ComponentModel.StringConverter, " + AssemblyRef.System)]
 		public object Tag {
 			get { return tag; }
 			set { tag = value; }

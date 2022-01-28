@@ -31,7 +31,7 @@ using System.Drawing;
 namespace System.Windows.Forms {
 
 	[ToolboxBitmap ("")]
-	[Designer ("System.Windows.Forms.Design.DataGridViewComboBoxColumnDesigner, " + Consts.AssemblySystem_Design,
+	[Designer ("System.Windows.Forms.Design.DataGridViewComboBoxColumnDesigner, " + AssemblyRef.SystemDesign,
 		   "System.ComponentModel.Design.IDesigner")]
 	public class DataGridViewComboBoxColumn : DataGridViewColumn
 	{
@@ -89,10 +89,10 @@ namespace System.Windows.Forms {
 			}
 		}
 
-		[Editor ("System.Windows.Forms.Design.DataMemberFieldEditor, " + Consts.AssemblySystem_Design,
-			 "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.Windows.Forms.Design.DataMemberFieldEditor, " + AssemblyRef.SystemDesign,
+			 "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		[DefaultValue ("")]
-		[TypeConverter ("System.Windows.Forms.Design.DataMemberFieldConverter, " + Consts.AssemblySystem_Design)]
+		[TypeConverter ("System.Windows.Forms.Design.DataMemberFieldConverter, " + AssemblyRef.SystemDesign)]
 		public string DisplayMember {
 			get {
 				if (base.CellTemplate == null) {
@@ -145,8 +145,8 @@ namespace System.Windows.Forms {
 			set { flatStyle = value; }
 		}
 
-		[Editor ("System.Windows.Forms.Design.StringCollectionEditor, " + Consts.AssemblySystem_Design,
-			 "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.Windows.Forms.Design.StringCollectionEditor, " + AssemblyRef.SystemDesign,
+			 "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Content)]
 		public DataGridViewComboBoxCell.ObjectCollection Items {
 			get {
@@ -190,9 +190,9 @@ namespace System.Windows.Forms {
 		}
 
 		[DefaultValue ("")]
-		[Editor ("System.Windows.Forms.Design.DataMemberFieldEditor, " + Consts.AssemblySystem_Design,
-			 "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
-		[TypeConverter ("System.Windows.Forms.Design.DataMemberFieldConverter, " + Consts.AssemblySystem_Design)]
+		[Editor ("System.Windows.Forms.Design.DataMemberFieldEditor, " + AssemblyRef.SystemDesign,
+			 "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
+		[TypeConverter ("System.Windows.Forms.Design.DataMemberFieldConverter, " + AssemblyRef.SystemDesign)]
 		public string ValueMember {
 			get {
 				if (base.CellTemplate == null) {

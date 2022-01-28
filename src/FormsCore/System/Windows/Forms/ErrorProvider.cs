@@ -31,9 +31,9 @@ using System.Drawing;
 
 namespace System.Windows.Forms {
 	[ToolboxItemFilter("System.Windows.Forms")]
-	[ProvideProperty("IconAlignment", "System.Windows.Forms.Control, " + Consts.AssemblySystem_Windows_Forms)]
-	[ProvideProperty("IconPadding", "System.Windows.Forms.Control, " + Consts.AssemblySystem_Windows_Forms)]
-	[ProvideProperty("Error", "System.Windows.Forms.Control, " + Consts.AssemblySystem_Windows_Forms)]
+	[ProvideProperty("IconAlignment", "System.Windows.Forms.Control, " + AssemblyRef.SystemWindowsForms)]
+	[ProvideProperty("IconPadding", "System.Windows.Forms.Control, " + AssemblyRef.SystemWindowsForms)]
+	[ProvideProperty("Error", "System.Windows.Forms.Control, " + AssemblyRef.SystemWindowsForms)]
 	[ComplexBindingProperties ("DataSource", "DataMember")]
 	public class ErrorProvider : Component, IExtenderProvider, ISupportInitialize
 	{
@@ -389,7 +389,7 @@ namespace System.Windows.Forms {
 
 		[MonoTODO ("Stub, does nothing")]
 		[DefaultValue (null)]
-		[Editor ("System.Windows.Forms.Design.DataMemberListEditor, " + Consts.AssemblySystem_Design, "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.Windows.Forms.Design.DataMemberListEditor, " + AssemblyRef.SystemDesign, "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		public string DataMember {
 			get {
 				return datamember;

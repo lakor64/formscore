@@ -38,10 +38,10 @@ using System.Windows.Forms.Theming;
 namespace System.Windows.Forms
 {
 	[DefaultProperty ("Text")]
-	[Designer ("System.Windows.Forms.Design.LabelDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.LabelDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]
-	[ToolboxItem ("System.Windows.Forms.Design.AutoSizeToolboxItem," + Consts.AssemblySystem_Design)]
+	[ToolboxItem ("System.Windows.Forms.Design.AutoSizeToolboxItem," + AssemblyRef.SystemDesign)]
 	[DefaultBindingProperty ("Text")]
 	public class Label : Control
 	{
@@ -312,7 +312,7 @@ namespace System.Windows.Forms
 		}
 
 		[DefaultValue (-1)]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[Localizable (true)]
 		[TypeConverter (typeof (ImageIndexConverter))]
 		[RefreshProperties (RefreshProperties.Repaint)]
@@ -344,7 +344,7 @@ namespace System.Windows.Forms
 
 		[Localizable (true)]
 		[DefaultValue ("")]
-		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[RefreshProperties (RefreshProperties.Repaint)]
 		[TypeConverter (typeof (ImageKeyConverter))]
 		public string ImageKey {
@@ -712,7 +712,7 @@ namespace System.Windows.Forms
 		}
 
 		[SettingsBindable (true)]
-		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + Consts.AssemblySystem_Design,
+		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + AssemblyRef.SystemDesign,
 			 typeof (System.Drawing.Design.UITypeEditor))]
 		public override string Text {
 			get { return base.Text; }

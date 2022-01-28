@@ -40,8 +40,8 @@ namespace System.Windows.Forms
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[DefaultEvent ("ItemClicked")]
 	[DefaultProperty ("Items")]
-	[Designer ("System.Windows.Forms.Design.ToolStripDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
-	[DesignerSerializer ("System.Windows.Forms.Design.ToolStripCodeDomSerializer, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.Serialization.CodeDomSerializer, " + Consts.AssemblySystem_Design)]
+	[Designer ("System.Windows.Forms.Design.ToolStripDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
+	[DesignerSerializer ("System.Windows.Forms.Design.ToolStripCodeDomSerializer, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.Serialization.CodeDomSerializer, " + AssemblyRef.SystemDesign)]
 	public class ToolStrip : ScrollableControl, IComponent, IDisposable, IToolStripData, IArrangedContainer
 	{
 		#region Private Variables

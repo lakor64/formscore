@@ -29,7 +29,7 @@
 using System.ComponentModel;
 
 namespace System.Windows.Forms {
-	[Editor("System.Windows.Forms.Design.DockEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
+	[Editor("System.Windows.Forms.Design.DockEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
 	public enum DockStyle {
 		None	= 0,
 		Top	= 1,

@@ -38,7 +38,7 @@ using System.Collections.Generic;
 namespace System.Windows.Forms {
 	[DesignerCategory("Form")]
 	[DesignTimeVisible(false)]
-	[Designer("System.Windows.Forms.Design.FormDocumentDesigner, " + Consts.AssemblySystem_Design, typeof(IRootDesigner))]
+	[Designer("System.Windows.Forms.Design.FormDocumentDesigner, " + AssemblyRef.SystemDesign, typeof(IRootDesigner))]
 	[DefaultEvent("Load")]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[InitializationEvent ("Load")]

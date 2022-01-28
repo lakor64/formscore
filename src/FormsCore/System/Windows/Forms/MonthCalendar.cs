@@ -40,7 +40,7 @@ namespace System.Windows.Forms {
 	[ComVisible(true)]
 	[DefaultProperty("SelectionRange")]
 	[DefaultEvent("DateChanged")]
-	[Designer ("System.Windows.Forms.Design.MonthCalendarDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.MonthCalendarDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	public class MonthCalendar : Control {
 		#region Local variables
 		ArrayList		annually_bolded_dates;

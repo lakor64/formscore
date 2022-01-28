@@ -37,7 +37,7 @@ using System.Runtime.InteropServices;
 
 namespace System.Windows.Forms {
 	[DefaultProperty("Document")]
-	[Designer("System.ComponentModel.Design.ComponentDesigner, " + Consts.AssemblySystem_Design)]
+	[Designer("System.ComponentModel.Design.ComponentDesigner, " + AssemblyRef.SystemDesign)]
 	[DesignTimeVisible(true)]
 	[ToolboxItem(true)]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]

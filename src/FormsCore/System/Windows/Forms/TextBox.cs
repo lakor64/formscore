@@ -38,7 +38,7 @@ namespace System.Windows.Forms {
 
 	[ComVisible(true)]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
-	[Designer ("System.Windows.Forms.Design.TextBoxDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.TextBoxDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	public class TextBox : TextBoxBase {
 		#region Variables
 		private ContextMenu	menu;
@@ -379,8 +379,8 @@ namespace System.Windows.Forms {
 		[Browsable (true)]
 		[EditorBrowsable (EditorBrowsableState.Always)]
 		[Localizable (true)]
-		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + Consts.AssemblySystem_Design,
-		 "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + AssemblyRef.SystemDesign,
+		 "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		public AutoCompleteStringCollection AutoCompleteCustomSource { 
 			get {
 				if(auto_complete_custom_source == null) {

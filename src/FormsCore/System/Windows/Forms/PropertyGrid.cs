@@ -40,7 +40,7 @@ using System.Windows.Forms.PropertyGridInternal;
 
 namespace System.Windows.Forms 
 {
-	[Designer("System.Windows.Forms.Design.PropertyGridDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer("System.Windows.Forms.Design.PropertyGridDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]
 	public class PropertyGrid : System.Windows.Forms.ContainerControl, ComponentModel.Com2Interop.IComPropertyBrowser 
@@ -588,7 +588,7 @@ namespace System.Windows.Forms
 		}
 
 		[DefaultValue(null)]
-		[TypeConverter("System.Windows.Forms.PropertyGrid+SelectedObjectConverter, " + Consts.AssemblySystem_Windows_Forms)]
+		[TypeConverter("System.Windows.Forms.PropertyGrid+SelectedObjectConverter, " + AssemblyRef.SystemWindowsForms)]
 		public object SelectedObject {
 			get {
 				if (selected_objects.Length > 0)

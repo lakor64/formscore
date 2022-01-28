@@ -42,7 +42,7 @@ namespace System.Windows.Forms {
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[Docking (DockingBehavior.Ask)]
 	[ComVisible (true)]
-	[Designer ("System.Windows.Forms.Design.RichTextBoxDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.RichTextBoxDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	public class RichTextBox : TextBoxBase {
 		#region Local Variables
 		internal bool		auto_word_select;

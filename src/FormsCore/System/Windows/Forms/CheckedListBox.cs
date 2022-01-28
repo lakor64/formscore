@@ -167,7 +167,7 @@ namespace System.Windows.Forms
 
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Content)]
 		[Localizable (true)]
-		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public new CheckedListBox.ObjectCollection Items {
 			get { return (CheckedListBox.ObjectCollection) base.Items; }
 		}

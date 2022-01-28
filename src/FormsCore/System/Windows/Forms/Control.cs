@@ -53,10 +53,10 @@ namespace System.Windows.Forms
 {
 	[ComVisible(true)]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
-	[Designer("System.Windows.Forms.Design.ControlDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer("System.Windows.Forms.Design.ControlDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[DefaultProperty("Text")]
 	[DefaultEvent("Click")]
-	[DesignerSerializer("System.Windows.Forms.Design.ControlCodeDomSerializer, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.Serialization.CodeDomSerializer, " + Consts.AssemblySystem_Design)]
+	[DesignerSerializer("System.Windows.Forms.Design.ControlCodeDomSerializer, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.Serialization.CodeDomSerializer, " + AssemblyRef.SystemDesign)]
 	[ToolboxItemFilter("System.Windows.Forms")]
 	public class Control : Component, ISynchronizeInvoke, IWin32Window
 		, IBindableComponent, IDropTarget, IArrangedElement, IArrangedContainer

@@ -35,7 +35,7 @@ namespace System.Windows.Forms {
 	[ComVisible (true)]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[DefaultBindingProperty ("CheckState")]
-	[ToolboxItem ("System.Windows.Forms.Design.AutoSizeToolboxItem," + Consts.AssemblySystem_Design)]
+	[ToolboxItem ("System.Windows.Forms.Design.AutoSizeToolboxItem," + AssemblyRef.SystemDesign)]
 	public class CheckBox : ButtonBase {
 		#region Local Variables
 		internal Appearance		appearance;

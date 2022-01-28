@@ -37,8 +37,8 @@ namespace System.Windows.Forms {
 
 	[ComVisibleAttribute(true)]
 	[ClassInterfaceAttribute(ClassInterfaceType.AutoDispatch)]
-	[Designer("System.Windows.Forms.Design.DataGridViewDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
-	[Editor("System.Windows.Forms.Design.DataGridViewComponentEditor, " + Consts.AssemblySystem_Design, typeof (System.ComponentModel.ComponentEditor))]
+	[Designer("System.Windows.Forms.Design.DataGridViewDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
+	[Editor("System.Windows.Forms.Design.DataGridViewComponentEditor, " + AssemblyRef.SystemDesign, typeof (System.ComponentModel.ComponentEditor))]
 	[ComplexBindingProperties ("DataSource", "DataMember")]
 	[DefaultEvent ("CellContentClick")]
 	[Docking (DockingBehavior.Ask)]
@@ -670,7 +670,7 @@ namespace System.Windows.Forms {
 		}
 
 		[MergableProperty (false)]
-		[Editor ("System.Windows.Forms.Design.DataGridViewColumnCollectionEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.DataGridViewColumnCollectionEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Content)]
 		public DataGridViewColumnCollection Columns {
 			get { return columns; }
@@ -711,7 +711,7 @@ namespace System.Windows.Forms {
 		}
 
 		[DefaultValue ("")]
-		[Editor ("System.Windows.Forms.Design.DataMemberListEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.DataMemberListEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public string DataMember {
 			get { return dataMember; }
 			set {

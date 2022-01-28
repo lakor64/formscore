@@ -32,7 +32,7 @@ using System.ComponentModel.Design.Serialization;
 
 namespace System.Windows.Forms
 {
-	[DesignerSerializer ("System.Windows.Forms.Design.TableLayoutControlCollectionCodeDomSerializer, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.Serialization.CodeDomSerializer, " + Consts.AssemblySystem_Design)]
+	[DesignerSerializer ("System.Windows.Forms.Design.TableLayoutControlCollectionCodeDomSerializer, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.Serialization.CodeDomSerializer, " + AssemblyRef.SystemDesign)]
 	[ListBindable (false)]
 	public class TableLayoutControlCollection : Control.ControlCollection
 	{

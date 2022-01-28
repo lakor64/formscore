@@ -32,8 +32,8 @@ using System.Runtime.InteropServices;
 namespace System.Windows.Forms {
 	[DefaultEvent("Load")]
 	[DesignerCategory("UserControl")]
-	[Designer("System.Windows.Forms.Design.ControlDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
-	[Designer("System.Windows.Forms.Design.UserControlDocumentDesigner, " + Consts.AssemblySystem_Design, typeof(IRootDesigner))]
+	[Designer("System.Windows.Forms.Design.ControlDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
+	[Designer("System.Windows.Forms.Design.UserControlDocumentDesigner, " + AssemblyRef.SystemDesign, typeof(IRootDesigner))]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[ComVisible (true)]
 	public class UserControl : ContainerControl {

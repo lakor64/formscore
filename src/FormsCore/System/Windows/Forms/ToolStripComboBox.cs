@@ -61,8 +61,8 @@ namespace System.Windows.Forms
 		[Localizable (true)]
 		[EditorBrowsable (EditorBrowsableState.Always)]
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Content)]
-		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + Consts.AssemblySystem_Design,
-			 "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + AssemblyRef.SystemDesign,
+			 "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		public AutoCompleteStringCollection AutoCompleteCustomSource {
 			get { return ComboBox.AutoCompleteCustomSource; }
 			set { ComboBox.AutoCompleteCustomSource = value; }
@@ -149,7 +149,7 @@ namespace System.Windows.Forms
 
 		[Localizable (true)]
 		[DesignerSerializationVisibility (DesignerSerializationVisibility.Content)]
-		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ListControlStringCollectionEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public ComboBox.ObjectCollection Items {
 			get { return this.ComboBox.Items; }
 		}

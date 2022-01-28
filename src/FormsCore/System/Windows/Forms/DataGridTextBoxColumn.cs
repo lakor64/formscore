@@ -75,7 +75,7 @@ namespace System.Windows.Forms
 		#endregion
 
 		#region Public Instance Properties
-		[Editor("System.Windows.Forms.Design.DataGridColumnStyleFormatEditor, " + Consts.AssemblySystem_Design, typeof(System.Drawing.Design.UITypeEditor))]
+		[Editor("System.Windows.Forms.Design.DataGridColumnStyleFormatEditor, " + AssemblyRef.SystemDesign, typeof(System.Drawing.Design.UITypeEditor))]
 		[DefaultValue (null)]
 		public string Format {
 			get { return format; }

@@ -438,7 +438,7 @@ namespace System.Windows.Forms
 
 		#region Public Instance Properties
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-		[Editor("System.Windows.Forms.Design.StringCollectionEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor("System.Windows.Forms.Design.StringCollectionEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		[Localizable(true)]
 		public DomainUpDownItemCollection Items {
 			get {

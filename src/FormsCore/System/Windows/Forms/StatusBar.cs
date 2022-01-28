@@ -39,7 +39,7 @@ namespace System.Windows.Forms {
 	[ComVisible (true)]
 	[ClassInterface (ClassInterfaceType.AutoDispatch)]
 	[DefaultEvent("PanelClick")]
-	[Designer("System.Windows.Forms.Design.StatusBarDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer("System.Windows.Forms.Design.StatusBarDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	[DefaultProperty("Text")]
 	public class StatusBar : Control {
 		#region Fields

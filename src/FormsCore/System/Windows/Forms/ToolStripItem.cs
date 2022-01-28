@@ -39,7 +39,7 @@ namespace System.Windows.Forms
 	[DefaultProperty ("Text")]
 	[DesignTimeVisible (false)]
 	[ToolboxItem (false)]
-	[Designer ("System.Windows.Forms.Design.ToolStripItemDesigner, " + Consts.AssemblySystem_Design, "System.ComponentModel.Design.IDesigner")]
+	[Designer ("System.Windows.Forms.Design.ToolStripItemDesigner, " + AssemblyRef.SystemDesign, "System.ComponentModel.Design.IDesigner")]
 	public abstract class ToolStripItem : Component, IDropTarget, IComponent, IDisposable, IArrangedElement
 	{
 		#region Private Variables
@@ -512,7 +512,7 @@ namespace System.Windows.Forms
 		[RelatedImageList ("Owner.ImageList")]
 		[TypeConverter (typeof (NoneExcludedImageIndexConverter))]
 		[RefreshProperties (RefreshProperties.Repaint)]
-		[Editor ("System.Windows.Forms.Design.ToolStripImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ToolStripImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public int ImageIndex {
 			get { return this.image_index; }
 			set {
@@ -535,7 +535,7 @@ namespace System.Windows.Forms
 		[RelatedImageList ("Owner.ImageList")]
 		[TypeConverter (typeof (ImageKeyConverter))]
 		[RefreshProperties (RefreshProperties.Repaint)]
-		[Editor ("System.Windows.Forms.Design.ToolStripImageIndexEditor, " + Consts.AssemblySystem_Design, typeof (System.Drawing.Design.UITypeEditor))]
+		[Editor ("System.Windows.Forms.Design.ToolStripImageIndexEditor, " + AssemblyRef.SystemDesign, typeof (System.Drawing.Design.UITypeEditor))]
 		public string ImageKey {
 			get { return this.image_key; }
 			set { 
@@ -794,8 +794,8 @@ namespace System.Windows.Forms
 		}
 
 		[Localizable (true)]
-		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + Consts.AssemblySystem_Design,
-			 "System.Drawing.Design.UITypeEditor, " + Consts.AssemblySystem_Drawing)]
+		[Editor ("System.ComponentModel.Design.MultilineStringEditor, " + AssemblyRef.SystemDesign,
+			 "System.Drawing.Design.UITypeEditor, " + AssemblyRef.SystemDrawing)]
 		public string ToolTipText {
 			get { return this.tool_tip_text; }
 			set { this.tool_tip_text = value; }
