@@ -17,12 +17,14 @@
     <DebugType>embedded</DebugType>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <SignAssembly>False</SignAssembly>
-    <Copyright>Base code (c) Various Mono authors and (c) Microsoft Corp.</Copyright>
+    <Copyright>Original code © Various Mono authors and © Microsoft Corporation.</Copyright>
     <PackageProjectUrl></PackageProjectUrl>
     <RepositoryUrl>https://github.com/lakor64/formscore</RepositoryUrl>
     <Description>Porting of Mono's System.Window.Forms to .NET6 with improvements</Description>
     <Company></Company>
     <Authors>Lakor64;Mono development team;Microsoft</Authors>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <RootNamespace>System.Windows.Forms</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -32,6 +34,33 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <NoWarn>1701;1702;CA1416</NoWarn>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="System\Windows\Forms\HtmlDocument.cs" />
+    <Compile Remove="System\Windows\Forms\HtmlElement.cs" />
+    <Compile Remove="System\Windows\Forms\HtmlElementCollection.cs" />
+    <Compile Remove="System\Windows\Forms\HtmlElementErrorEventArgs.cs" />
+    <Compile Remove="System\Windows\Forms\HtmlElementErrorEventHandler.cs" />
+    <Compile Remove="System\Windows\Forms\HtmlElementEventArgs.cs" />
+    <Compile Remove="System\Windows\Forms\HtmlElementEventHandler.cs" />
+    <Compile Remove="System\Windows\Forms\HtmlElementInsertionOrientation.cs" />
+    <Compile Remove="System\Windows\Forms\HtmlHistory.cs" />
+    <Compile Remove="System\Windows\Forms\HtmlWindow.cs" />
+    <Compile Remove="System\Windows\Forms\HtmlWindowCollection.cs" />
+    <Compile Remove="System\Windows\Forms\RTF\RtfTest.cs" />
+    <Compile Remove="System\Windows\Forms\RTF\test.cs" />
+    <Compile Remove="System\Windows\Forms\WebBrowser.cs" />
+    <Compile Remove="System\Windows\Forms\WebBrowserBase.cs" />
+    <Compile Remove="System\Windows\Forms\X11Internal\X11Atoms.cs" />
+    <Compile Remove="System\Windows\Forms\X11Internal\X11Display.cs" />
+    <Compile Remove="System\Windows\Forms\X11Internal\X11Exception.cs" />
+    <Compile Remove="System\Windows\Forms\X11Internal\X11Hwnd.cs" />
+    <Compile Remove="System\Windows\Forms\X11Internal\X11RootHwnd.cs" />
+    <Compile Remove="System\Windows\Forms\X11Internal\X11ThreadQueue.cs" />
+    <Compile Remove="System\Windows\Forms\X11Internal\Xlib.cs" />
+    <Compile Remove="System\Windows\Forms\X11Internal\XplatUIX11-new.cs" />
+    <Compile Remove="System\Windows\Forms\XplatUIX11GTK.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Remove="Resources\System\Windows\Forms\XPThemes.manifest" />
@@ -49,20 +78,19 @@
     <None Include="System\Windows\Forms\HtmlHistory.cs" />
     <None Include="System\Windows\Forms\HtmlWindow.cs" />
     <None Include="System\Windows\Forms\HtmlWindowCollection.cs" />
+    <None Include="System\Windows\Forms\RTF\RtfTest.cs" />
+    <None Include="System\Windows\Forms\RTF\test.cs" />
     <None Include="System\Windows\Forms\WebBrowser.cs" />
     <None Include="System\Windows\Forms\WebBrowserBase.cs" />
     <None Include="System\Windows\Forms\WebBrowserDocumentCompletedEventArgs.cs" />
-    <None Include="System\Windows\Forms\WebBrowserDocumentCompletedEventHandler.cs" />
-    <None Include="System\Windows\Forms\WebBrowserEncryptionLevel.cs" />
-    <None Include="System\Windows\Forms\WebBrowserNavigatedEventArgs.cs" />
-    <None Include="System\Windows\Forms\WebBrowserNavigatedEventHandler.cs" />
-    <None Include="System\Windows\Forms\WebBrowserNavigatingEventArgs.cs" />
-    <None Include="System\Windows\Forms\WebBrowserNavigatingEventHandler.cs" />
-    <None Include="System\Windows\Forms\WebBrowserProgressChangedEventArgs.cs" />
-    <None Include="System\Windows\Forms\WebBrowserProgressChangedEventHandler.cs" />
-    <None Include="System\Windows\Forms\WebBrowserReadyState.cs" />
-    <None Include="System\Windows\Forms\WebBrowserRefreshOption.cs" />
-    <None Include="System\Windows\Forms\WebBrowserSiteBase.cs" />
+    <None Include="System\Windows\Forms\X11Internal\X11Atoms.cs" />
+    <None Include="System\Windows\Forms\X11Internal\X11Display.cs" />
+    <None Include="System\Windows\Forms\X11Internal\X11Exception.cs" />
+    <None Include="System\Windows\Forms\X11Internal\X11Hwnd.cs" />
+    <None Include="System\Windows\Forms\X11Internal\X11RootHwnd.cs" />
+    <None Include="System\Windows\Forms\X11Internal\X11ThreadQueue.cs" />
+    <None Include="System\Windows\Forms\X11Internal\Xlib.cs" />
+    <None Include="System\Windows\Forms\X11Internal\XplatUIX11-new.cs" />
     <None Include="System\Windows\Forms\XplatUIX11GTK.cs" />
   </ItemGroup>
 
@@ -81,6 +109,9 @@
     <EmbeddedResource Update="Resources\SR.resx">
       <GenerateSource>true</GenerateSource>
       <Namespace>System</Namespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>System</CustomToolNamespace>
     </EmbeddedResource>
      <EmbeddedResource Update="Resources\System\Windows\Forms\mdiwindowdialog.resx">
       <LogicalName>System\Windows\Forms.MdiWindowDialog.resources</LogicalName>
@@ -677,5 +708,13 @@
       <LogicalName>System\Windows\Forms.XPThemes.manifest</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
+
+ <ItemGroup>
+   <Compile Update="Resources\SR.Designer.cs">
+     <DesignTime>True</DesignTime>
+     <AutoGen>True</AutoGen>
+     <DependentUpon>SR.resx</DependentUpon>
+   </Compile>
+ </ItemGroup>
   
 </Project>

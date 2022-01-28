@@ -16,5 +16,5 @@ internal static class AssemblyRef
     internal const string SystemDesign = "System.Design, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
     internal const string SystemDrawingDesign = "System.Drawing.Design, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
     internal const string SystemDrawing = "System.Drawing, Version=" + FXAssembly.Version + ", Culture=neutral, PublicKeyToken=" + MicrosoftPublicKey;
-    internal const string SystemWindowsForms = "FormsCore, Culture=neutral";
+    internal const string SystemWindowsForms = "System.Windows.Forms, Culture=neutral";
 }
