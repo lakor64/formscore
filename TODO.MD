@@ -1,0 +1,5 @@
+- Fix all MonoTODO (possibly by trying to take/adapt the existing code from WinForms where possible)
+- SRDescription
+- Fix designer
+- FileDialog: shouldn't we use the native dialogs?
+- Try to avoid MSR (Mono Shared Resources)
