@@ -5,7 +5,11 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsCore", "src\FormsCore\FormsCore.csproj", "{96A7C2AC-1A39-4AAB-9AE9-896987893BC5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mono.Posix", "src\Mono.Posix\Mono.Posix.NETStandard-netstandard_2_0.csproj", "{7FB35F8F-9075-4EDB-9CEE-D1B493A9125C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mono.Posix.NETStandard-netstandard_2_0", "src\Mono.Posix\Mono.Posix.NETStandard-netstandard_2_0.csproj", "{7FB35F8F-9075-4EDB-9CEE-D1B493A9125C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{5F9539C9-5791-4AE3-8AD4-C90A507D0153}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "create-keyboards", "tools\create-keyboards\create-keyboards.csproj", "{69783EBA-AA21-4B53-9DFF-668FACD1D6CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,16 @@ Global
 		{7FB35F8F-9075-4EDB-9CEE-D1B493A9125C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FB35F8F-9075-4EDB-9CEE-D1B493A9125C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FB35F8F-9075-4EDB-9CEE-D1B493A9125C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69783EBA-AA21-4B53-9DFF-668FACD1D6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69783EBA-AA21-4B53-9DFF-668FACD1D6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69783EBA-AA21-4B53-9DFF-668FACD1D6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69783EBA-AA21-4B53-9DFF-668FACD1D6CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{69783EBA-AA21-4B53-9DFF-668FACD1D6CF} = {5F9539C9-5791-4AE3-8AD4-C90A507D0153}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E106B075-3194-4A8F-93C6-BBD5F2CD9A62}

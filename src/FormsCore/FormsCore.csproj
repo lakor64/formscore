@@ -106,6 +106,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="rm\resources\System.Windows.Forms.resx" LogicalName="System.Windows.Forms.resources">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>System.Windows.Forms.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\keyboards.resx" LogicalName="keyboards.resources">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>keyboards.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\MSR.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MSR.Designer.cs</LastGenOutput>
@@ -124,6 +132,66 @@
     <EmbeddedResource Update="Resources\System\Windows\Forms\PrintPreviewDialog.resx">
       <LogicalName>System\Windows\Forms.PrintPreviewDialog.resources</LogicalName>
     </EmbeddedResource>
+  </ItemGroup>
+
+
+  <ItemGroup>
+	<EmbeddedResource Include="rm\resources\1-up.png" LogicalName="1-up.png" />
+	<EmbeddedResource Include="rm\resources\16_computer.png" LogicalName="16_computer.png" />
+	<EmbeddedResource Include="rm\resources\16_dialog-error.png" LogicalName="16_dialog-error.png" />
+	<EmbeddedResource Include="rm\resources\16_dialog-information.png" LogicalName="16_dialog-information.png" />
+	<EmbeddedResource Include="rm\resources\16_dialog-warning.png" LogicalName="16_dialog-warning.png" />
+	<EmbeddedResource Include="rm\resources\16_document-open.png" LogicalName="16_document-open.png" />
+	<EmbeddedResource Include="rm\resources\16_folder-remote.png" LogicalName="16_folder-remote.png" />
+	<EmbeddedResource Include="rm\resources\16_folder.png" LogicalName="16_folder.png" />
+	<EmbeddedResource Include="rm\resources\16_printer.png" LogicalName="16_printer.png" />
+	<EmbeddedResource Include="rm\resources\16_user-desktop.png" LogicalName="16_user-desktop.png" />
+	<EmbeddedResource Include="rm\resources\16_user-home.png" LogicalName="16_user-home.png" />
+	<EmbeddedResource Include="rm\resources\2-up.png" LogicalName="2-up.png" />
+	<EmbeddedResource Include="rm\resources\22_page-magnifier.png" LogicalName="22_page-magnifier.png" />
+	<EmbeddedResource Include="rm\resources\3-up.png" LogicalName="3-up.png" />
+	<EmbeddedResource Include="rm\resources\32_computer.png" LogicalName="32_computer.png" />
+	<EmbeddedResource Include="rm\resources\32_document-open.png" LogicalName="32_document-open.png" />
+	<EmbeddedResource Include="rm\resources\32_folder-remote.png" LogicalName="32_folder-remote.png" />
+	<EmbeddedResource Include="rm\resources\32_printer.png" LogicalName="32_printer.png" />
+	<EmbeddedResource Include="rm\resources\32_user-desktop.png" LogicalName="32_user-desktop.png" />
+	<EmbeddedResource Include="rm\resources\32_user-home.png" LogicalName="32_user-home.png" />
+	<EmbeddedResource Include="rm\resources\4-up.png" LogicalName="4-up.png" />
+	<EmbeddedResource Include="rm\resources\6-up.png" LogicalName="6-up.png" />
+	<EmbeddedResource Include="rm\resources\computer.png" LogicalName="computer.png" />
+	<EmbeddedResource Include="rm\resources\DnDCopy.cur" LogicalName="DnDCopy.cur" />
+	<EmbeddedResource Include="rm\resources\DnDLink.cur" LogicalName="DnDLink.cur" />
+	<EmbeddedResource Include="rm\resources\DnDMove.cur" LogicalName="DnDMove.cur" />
+	<EmbeddedResource Include="rm\resources\DnDNo.cur" LogicalName="DnDNo.cur" />
+	<EmbeddedResource Include="rm\resources\document-open.png" LogicalName="document-open.png" />
+	<EmbeddedResource Include="rm\resources\errorProvider.ico" LogicalName="errorProvider.ico" />
+	<EmbeddedResource Include="rm\resources\EventsTab.bmp" LogicalName="EventsTab.bmp" />
+	<EmbeddedResource Include="rm\resources\folder-new.png" LogicalName="folder-new.png" />
+	<EmbeddedResource Include="rm\resources\folder-remote.png" LogicalName="folder-remote.png" />
+	<EmbeddedResource Include="rm\resources\folder.png" LogicalName="folder.png" />
+	<EmbeddedResource Include="rm\resources\go-previous.png" LogicalName="go-previous.png" />
+	<EmbeddedResource Include="rm\resources\go-top.png" LogicalName="go-top.png" />
+	<EmbeddedResource Include="rm\resources\image-missing.png" LogicalName="image-missing.png" />
+	<EmbeddedResource Include="rm\resources\image-x-generic.png" LogicalName="image-x-generic.png" />
+	<EmbeddedResource Include="rm\resources\mono.ico" LogicalName="mono.ico" />
+	<EmbeddedResource Include="rm\resources\nav_delete.png" LogicalName="nav_delete.png" />
+	<EmbeddedResource Include="rm\resources\nav_end.png" LogicalName="nav_end.png" />
+	<EmbeddedResource Include="rm\resources\nav_first.png" LogicalName="nav_first.png" />
+	<EmbeddedResource Include="rm\resources\nav_next.png" LogicalName="nav_next.png" />
+	<EmbeddedResource Include="rm\resources\nav_plus.png" LogicalName="nav_plus.png" />
+	<EmbeddedResource Include="rm\resources\nav_previous.png" LogicalName="nav_previous.png" />
+	<EmbeddedResource Include="rm\resources\NESW.cur" LogicalName="NESW.cur" />
+	<EmbeddedResource Include="rm\resources\NWSE.cur" LogicalName="NWSE.cur" />
+	<EmbeddedResource Include="rm\resources\preferences-system-windows.png" LogicalName="preferences-system-windows.png" />
+	<EmbeddedResource Include="rm\resources\PropertiesTab.bmp" LogicalName="PropertiesTab.bmp" />
+	<EmbeddedResource Include="rm\resources\propertygrid-alphabetical.png" LogicalName="propertygrid-alphabetical.png" />
+	<EmbeddedResource Include="rm\resources\propertygrid-categorized.png" LogicalName="propertygrid-categorized.png" />
+	<EmbeddedResource Include="rm\resources\propertygrid-propertypages.png" LogicalName="propertygrid-propertypages.png" />
+	<EmbeddedResource Include="rm\resources\SplitterNS.cur" LogicalName="SplitterNS.cur" />
+	<EmbeddedResource Include="rm\resources\SplitterWE.cur" LogicalName="SplitterWE.cur" />
+	<EmbeddedResource Include="rm\resources\text-x-generic.png" LogicalName="text-x-generic.png" />
+	<EmbeddedResource Include="rm\resources\user-desktop.png" LogicalName="user-desktop.png" />
+	<EmbeddedResource Include="rm\resources\user-home.png" LogicalName="user-home.png" />
   </ItemGroup>
 
  <ItemGroup>
@@ -714,7 +782,12 @@
     </EmbeddedResource>
   </ItemGroup>
 
- <ItemGroup>
+  <ItemGroup>
+    <Compile Update="rm\resources\System.Windows.Forms.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>System.Windows.Forms.resx</DependentUpon>
+    </Compile> 
    <Compile Update="Resources\MSR.Designer.cs">
      <DesignTime>True</DesignTime>
      <AutoGen>True</AutoGen>
