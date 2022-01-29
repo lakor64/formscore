@@ -1638,6 +1638,11 @@ namespace System.Windows.Forms {
 		XIMStatusNone		= 0x0800,
 	}
 
+	internal struct XIMPropertiesStruct
+	{
+		public XIMProperties Props;
+	}
+
 	[Flags]
 	internal enum WindowType {
 		Client			= 1,

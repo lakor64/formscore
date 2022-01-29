@@ -4637,7 +4637,18 @@ namespace System.Windows.Forms {
 
 						Rectangle rect = new Rectangle (xevent.ExposeEvent.x, xevent.ExposeEvent.y, xevent.ExposeEvent.width, xevent.ExposeEvent.height);
 						Region region = new Region (rect);
-						IntPtr hrgn = region.GetHrgn (null); // Graphics object isn't needed
+
+						IntPtr hrgn = IntPtr.Zero;
+						{
+							// yeah this is not cool pretty much, if we'll ever have out own implementation of System.Drawing pls expose this assembly for internal
+							var p = typeof(Region).GetProperties(BindingFlags.Instance |
+							                                      BindingFlags.NonPublic | BindingFlags.Public);
+							
+							if (p.Length < 1)
+								throw new Exception("...");
+							
+								hrgn = (IntPtr?)p[0].GetValue(region) ?? IntPtr.Zero;
+						}
 						msg.message = Msg.WM_NCPAINT;
 						msg.wParam = hrgn == IntPtr.Zero ? (IntPtr)1 : hrgn;
 						msg.refobject = region;
