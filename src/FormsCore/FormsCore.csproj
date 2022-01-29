@@ -106,10 +106,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Resources\MSR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MSR.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>System</CustomToolNamespace>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\SR.resx">
       <GenerateSource>true</GenerateSource>
       <Namespace>System</Namespace>
-      <Generator>PublicResXFileCodeGenerator</Generator>
+      <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SR.Designer.cs</LastGenOutput>
       <CustomToolNamespace>System</CustomToolNamespace>
     </EmbeddedResource>
@@ -710,6 +715,11 @@
   </ItemGroup>
 
  <ItemGroup>
+   <Compile Update="Resources\MSR.Designer.cs">
+     <DesignTime>True</DesignTime>
+     <AutoGen>True</AutoGen>
+     <DependentUpon>MSR.resx</DependentUpon>
+   </Compile>
    <Compile Update="Resources\SR.Designer.cs">
      <DesignTime>True</DesignTime>
      <AutoGen>True</AutoGen>

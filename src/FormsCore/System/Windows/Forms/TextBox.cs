@@ -75,12 +75,12 @@ namespace System.Windows.Forms {
 
 			SetStyle (ControlStyles.StandardClick | ControlStyles.StandardDoubleClick, false);
 
-			undo = new MenuItem(Locale.GetText("&Undo"));
-			cut = new MenuItem(Locale.GetText("Cu&t"));
-			copy = new MenuItem(Locale.GetText("&Copy"));
-			paste = new MenuItem(Locale.GetText("&Paste"));
-			delete = new MenuItem(Locale.GetText("&Delete"));
-			select_all = new MenuItem(Locale.GetText("Select &All"));
+			undo = new MenuItem(MSR.Undo);
+			cut = new MenuItem(MSR.Cut);
+			copy = new MenuItem(MSR.Copy);
+			paste = new MenuItem(MSR.Paste);
+			delete = new MenuItem(MSR.Delete);
+			select_all = new MenuItem(MSR.SelectAll);
 
 			menu = new ContextMenu(new MenuItem[] { undo, new MenuItem("-"), cut, copy, paste, delete, new MenuItem("-"), select_all});
 			ContextMenu = menu;
@@ -414,7 +414,7 @@ namespace System.Windows.Forms {
 					return;
 
 				if((value < AutoCompleteMode.None) || (value > AutoCompleteMode.SuggestAppend))
-					throw new InvalidEnumArgumentException (Locale.GetText ("Enum argument value '{0}' is not valid for AutoCompleteMode", value));
+					throw new InvalidEnumArgumentException(nameof(value), (int)value, typeof(AutoCompleteMode));
 
 				auto_complete_mode = value;
 			}
@@ -432,7 +432,7 @@ namespace System.Windows.Forms {
 					return;
 
 				if(!Enum.IsDefined (typeof (AutoCompleteSource), value))
-					throw new InvalidEnumArgumentException (Locale.GetText ("Enum argument value '{0}' is not valid for AutoCompleteSource", value));
+					throw new InvalidEnumArgumentException(nameof(value), (int)value, typeof(AutoCompleteSource));
 
 				auto_complete_source = value;
 			}

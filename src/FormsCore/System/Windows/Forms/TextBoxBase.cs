@@ -787,7 +787,7 @@ namespace System.Windows.Forms
 				o.SetData(DataFormats.Rtf, ((RichTextBox)this).SelectedRtf);
 			Clipboard.SetDataObject (o);
 
-			document.undo.BeginUserAction (Locale.GetText ("Cut"));
+			document.undo.BeginUserAction (SR.RichTextBox_IDCut);
 			document.ReplaceSelection (String.Empty, false);
 			document.undo.EndUserAction ();
 
@@ -1387,7 +1387,7 @@ namespace System.Windows.Forms
 
 			// delete only deletes on the line, doesn't do the combine
 			if (document.selection_visible) {
-				document.undo.BeginUserAction (Locale.GetText ("Delete"));
+				document.undo.BeginUserAction (SR.RichTextBox_IDDelete);
 				document.ReplaceSelection("", false);
 				document.undo.EndUserAction ();
 				fire_changed = true;
@@ -1432,7 +1432,7 @@ namespace System.Windows.Forms
 						start_pos--;
 					}
 
-					document.undo.BeginUserAction (Locale.GetText ("Delete"));
+					document.undo.BeginUserAction (SR.RichTextBox_IDDelete);
 					document.DeleteChars(document.CaretTag.Line, start_pos, document.CaretPosition - start_pos);
 					document.undo.EndUserAction ();
 					document.PositionCaret(document.CaretLine, start_pos);
@@ -2400,13 +2400,13 @@ namespace System.Windows.Forms
 			}
 
 			if (format.Name == DataFormats.Rtf) {
-				document.undo.BeginUserAction (Locale.GetText ("Paste"));
+				document.undo.BeginUserAction (SR.RichTextBox_IDPaste);
 				((RichTextBox)this).SelectedRtf = (string)clip.GetData(DataFormats.Rtf);
 				document.undo.EndUserAction ();
 				Modified = true;
 				return true;
 			} else if (format.Name == DataFormats.Bitmap) {
-				document.undo.BeginUserAction (Locale.GetText ("Paste"));
+				document.undo.BeginUserAction (SR.RichTextBox_IDPaste);
 				//	document.InsertImage (document.caret.line, document.caret.pos, (Image) clip.GetData (DataFormats.Bitmap));
 				document.MoveCaret (CaretDirection.CharForward);
 				document.undo.EndUserAction ();
@@ -2420,16 +2420,16 @@ namespace System.Windows.Forms
 			}
 
 			if (!obey_length) {
-				document.undo.BeginUserAction (Locale.GetText ("Paste"));
+				document.undo.BeginUserAction (SR.RichTextBox_IDPaste);
 				this.SelectedText = s;
 				document.undo.EndUserAction ();
 			} else {
 				if ((s.Length + (document.Length - SelectedText.Length)) < max_length) {
-					document.undo.BeginUserAction (Locale.GetText ("Paste"));
+					document.undo.BeginUserAction (SR.RichTextBox_IDPaste);
 					this.SelectedText = s;
 					document.undo.EndUserAction ();
 				} else if ((document.Length - SelectedText.Length) < max_length) {
-					document.undo.BeginUserAction (Locale.GetText ("Paste"));
+					document.undo.BeginUserAction (SR.RichTextBox_IDPaste);
 					this.SelectedText = s.Substring (0, max_length - (document.Length - SelectedText.Length));
 					document.undo.EndUserAction ();
 				}

@@ -51,7 +51,7 @@ namespace System.Windows.Forms.Design
 		}
 		
 		public override string TabName {
-			get { return Locale.GetText ("Events"); }
+			get { return SR.PBRSToolTipEvents; }
 		}
 		
 		public override PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context, object component, 

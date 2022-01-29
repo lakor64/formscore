@@ -38,12 +38,12 @@ namespace System.Windows.Forms {
 		public SaveFileDialog ()
 		{
 			form.SuspendLayout ();
-			
-			form.Text = Locale.GetText("Save As");
 
-			FileTypeLabel = Locale.GetText("Save as type:");
-			OpenSaveButtonText = Locale.GetText("Save");
-			SearchSaveLabel = Locale.GetText("Save in:");
+			form.Text = MSR.SaveAs;
+
+			FileTypeLabel = MSR.SaveAsType;
+			OpenSaveButtonText = MSR.Save;
+			SearchSaveLabel = MSR.SaveIn;
 			fileDialogType = FileDialogType.SaveFileDialog;
 			
 			form.ResumeLayout (false);
@@ -103,7 +103,7 @@ namespace System.Windows.Forms {
 			get {
 				string title = base.DialogTitle;
 				if (title.Length == 0)
-					title = Locale.GetText("Save As");
+					title = MSR.SaveAs;
 				return title;
 			}
 		}

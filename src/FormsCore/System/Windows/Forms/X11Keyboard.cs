@@ -869,8 +869,7 @@ namespace System.Windows.Forms {
 			if (layout != null)  {
                                 return layout;
 			} else {
-				Console.WriteLine (Locale.GetText("Keyboard layout not recognized, using default layout: " +
-								   layouts.Layouts [0].Name));
+				Console.WriteLine (string.Format(MSR.KeyboardLayoutError, layouts.Layouts [0].Name));
 			}
 
 			return layouts.Layouts [0];

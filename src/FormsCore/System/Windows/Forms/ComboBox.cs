@@ -250,7 +250,7 @@ namespace System.Windows.Forms
 					return;
 
 				if((value < AutoCompleteMode.None) || (value > AutoCompleteMode.SuggestAppend))
-					throw new InvalidEnumArgumentException (Locale.GetText ("Enum argument value '{0}' is not valid for AutoCompleteMode", value));
+					throw new InvalidEnumArgumentException("value", (int)value, typeof(AutoCompleteMode));
 
 				auto_complete_mode = value;
 				SetTextBoxAutoCompleteData ();
@@ -268,7 +268,7 @@ namespace System.Windows.Forms
 					return;
 
 				if(!Enum.IsDefined (typeof (AutoCompleteSource), value))
-					throw new InvalidEnumArgumentException (Locale.GetText ("Enum argument value '{0}' is not valid for AutoCompleteSource", value));
+					throw new InvalidEnumArgumentException("value", (int)value, typeof(AutoCompleteSource));
 
 				auto_complete_source = value;
 				SetTextBoxAutoCompleteData ();

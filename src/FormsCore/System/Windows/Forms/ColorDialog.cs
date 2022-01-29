@@ -147,48 +147,48 @@ namespace System.Windows.Forms {
 			redLabel.Location = new Point (361, 206);
 			redLabel.Size = new Size (40, 16);
 			redLabel.TabIndex = 25;
-			redLabel.Text = Locale.GetText ("Red") + ":";
+			redLabel.Text = MSR.ColorRed + ":";
 			redLabel.TextAlign = ContentAlignment.MiddleRight;
 			// blueLabel
 			blueLabel.FlatStyle = FlatStyle.System;
 			blueLabel.Location = new Point (361, 250);
 			blueLabel.Size = new Size (40, 16);
 			blueLabel.TabIndex = 26;
-			blueLabel.Text = Locale.GetText ("Blue") + ":";
+			blueLabel.Text = MSR.ColorBlue + ":";
 			blueLabel.TextAlign = ContentAlignment.MiddleRight;
 			// greenLabel
 			greenLabel.FlatStyle = FlatStyle.System;
 			greenLabel.Location = new Point (361, 228);
 			greenLabel.Size = new Size (40, 16);
 			greenLabel.TabIndex = 27;
-			greenLabel.Text = Locale.GetText ("Green") + ":";
+			greenLabel.Text = MSR.ColorGreen + ":";
 			greenLabel.TextAlign = ContentAlignment.MiddleRight;
 			// colorBaseLabel
 			colorBaseLabel.Location = new Point (228, 247);
 			colorBaseLabel.Size = new Size (60, 16);
 			colorBaseLabel.TabIndex = 28;
-			colorBaseLabel.Text = Locale.GetText ("Color");
+			colorBaseLabel.Text = MSR.Color;
 			colorBaseLabel.TextAlign = ContentAlignment.MiddleCenter;
 			// hueLabel
 			hueLabel.FlatStyle = FlatStyle.System;
 			hueLabel.Location = new Point (287, 206);
 			hueLabel.Size = new Size (36, 16);
 			hueLabel.TabIndex = 23;
-			hueLabel.Text = Locale.GetText ("Hue") + ":";
+			hueLabel.Text = MSR.Hue + ":";
 			hueLabel.TextAlign = ContentAlignment.MiddleRight;
 			// satLabel
 			satLabel.FlatStyle = FlatStyle.System;
 			satLabel.Location = new Point (287, 228);
 			satLabel.Size = new Size (36, 16);
 			satLabel.TabIndex = 22;
-			satLabel.Text = Locale.GetText ("Sat") + ":";
+			satLabel.Text = MSR.Sat + ":";
 			satLabel.TextAlign = ContentAlignment.MiddleRight;
 			// briLabel
 			briLabel.FlatStyle = FlatStyle.System;
 			briLabel.Location = new Point (287, 250);
 			briLabel.Size = new Size (36, 16);
 			briLabel.TabIndex = 24;
-			briLabel.Text = Locale.GetText ("Bri") + ":";
+			briLabel.Text = MSR.Bri + ":";
 			briLabel.TextAlign = ContentAlignment.MiddleRight;
 			
 			// defineColoursButton
@@ -196,27 +196,25 @@ namespace System.Windows.Forms {
 			defineColoursButton.Location = new Point (5, 244);
 			defineColoursButton.Size = new Size (210, 22);
 			defineColoursButton.TabIndex = 6;
-			// FIXME: update resource files
-			defineColoursButton.Text = "Define Custom Colors >>";
-			//defineColoursButton.Text = Locale.GetText ("Define Custom Colors >>");
+			defineColoursButton.Text = MSR.DefineCustomColors;
 			// okButton
 			okButton.FlatStyle = FlatStyle.System;
 			okButton.Location = new Point (5, 271);
 			okButton.Size = new Size (66, 22);
 			okButton.TabIndex = 0;
-			okButton.Text = Locale.GetText ("OK");
+			okButton.Text = SR.OKCaption;
 			// cancelButton
 			cancelButton.FlatStyle = FlatStyle.System;
 			cancelButton.Location = new Point (78, 271);
 			cancelButton.Size = new Size (66, 22);
 			cancelButton.TabIndex = 1;
-			cancelButton.Text = Locale.GetText ("Cancel");
+			cancelButton.Text = SR.CancelCaption;
 			// helpButton
 			helpButton.FlatStyle = FlatStyle.System;
 			helpButton.Location = new Point (149, 271);
 			helpButton.Size = new Size (66, 22);
 			helpButton.TabIndex = 5;
-			helpButton.Text = Locale.GetText ("Help");
+			helpButton.Text = SR.HelpCaption;
 			helpButton.Hide ();
 			
 			// addColoursButton
@@ -224,9 +222,7 @@ namespace System.Windows.Forms {
 			addColoursButton.Location = new Point (227, 271);
 			addColoursButton.Size = new Size (213, 22);
 			addColoursButton.TabIndex = 7;
-			// FIXME: update resource files
-			addColoursButton.Text =  "Add To Custom Colors";
-			//addColoursButton.Text =  Locale.GetText ("Add To Custom Colors");
+			addColoursButton.Text =  MSR.AddCustomColors;
 			
 			// baseColorControl
 			baseColorControl.Location = new Point (3, 6);
@@ -1325,13 +1321,13 @@ namespace System.Windows.Forms {
 				baseColorLabel.Location = new Point (2, 0);
 				baseColorLabel.Size = new Size (200, 12);
 				baseColorLabel.TabIndex = 5;
-				baseColorLabel.Text = Locale.GetText ("Base Colors") + ":";
+				baseColorLabel.Text = MSR.BaseColors + ":";
 				// userColorLabel
 				userColorLabel.FlatStyle = FlatStyle.System;
 				userColorLabel.Location = new Point (2, 164);
 				userColorLabel.Size = new Size (200, 14);
 				userColorLabel.TabIndex = 104;
-				userColorLabel.Text = Locale.GetText ("User Colors") + ":";
+				userColorLabel.Text = MSR.UserColors + ":";
 				
 				Controls.Add (userSmallColorControl [7]);
 				Controls.Add (userSmallColorControl [6]);

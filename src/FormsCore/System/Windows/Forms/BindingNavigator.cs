@@ -45,7 +45,7 @@ namespace System.Windows.Forms
 		private BindingSource bindingSource = null;
 		//private bool changingText = false;
 		private ToolStripItem countItem = null;
-		private string countItemFormat = Locale.GetText("of {0}");
+		private string countItemFormat = SR.BindingNavigatorCountItemFormat;
 		private ToolStripItem deleteItem = null;
 		private bool initFlag = false;
 		private ToolStripItem moveFirstItem = null;
@@ -233,12 +233,12 @@ namespace System.Windows.Forms
 
 			MoveFirstItem = new ToolStripButton();
 			moveFirstItem.Image = ResourceImageLoader.Get("nav_first.png");
-			moveFirstItem.ToolTipText = Locale.GetText("Move first");
+			moveFirstItem.ToolTipText = SR.BindingNavigatorMoveFirstItemText;
 			Items.Add(moveFirstItem);
 
 			MovePreviousItem = new ToolStripButton();
 			movePreviousItem.Image = ResourceImageLoader.Get("nav_previous.png");
-			movePreviousItem.ToolTipText = Locale.GetText("Move previous");
+			movePreviousItem.ToolTipText = SR.BindingNavigatorMovePreviousItemText;
 			Items.Add(movePreviousItem);
 
 			Items.Add(new ToolStripSeparator());
@@ -247,11 +247,11 @@ namespace System.Windows.Forms
 			positionItem.Width = 50;
 			positionItem.Text = (bindingSource == null ? 0 : 1).ToString();
 			positionItem.Width = 50;
-			positionItem.ToolTipText = Locale.GetText("Current position");
+			positionItem.ToolTipText = SR.BindingNavigatorPositionItemTip;
 			Items.Add(positionItem);
 
 			CountItem = new ToolStripLabel();
-			countItem.ToolTipText = Locale.GetText("Total number of items");
+			countItem.ToolTipText = SR.BindingNavigatorCountItemTip;
 			countItem.Text = Locale.GetText(countItemFormat, bindingSource == null ? 0 : bindingSource.Count);
 			Items.Add(countItem);
 
@@ -259,24 +259,24 @@ namespace System.Windows.Forms
 
 			MoveNextItem = new ToolStripButton();
 			moveNextItem.Image = ResourceImageLoader.Get("nav_next.png");
-			moveNextItem.ToolTipText = Locale.GetText("Move next");
+			moveNextItem.ToolTipText = SR.BindingNavigatorMoveNextItemText;
 			Items.Add(moveNextItem);
 
 			MoveLastItem = new ToolStripButton();
 			moveLastItem.Image = ResourceImageLoader.Get("nav_end.png");
-			moveLastItem.ToolTipText = Locale.GetText("Move last");
+			moveLastItem.ToolTipText = SR.BindingNavigatorMoveLastItemText;
 			Items.Add(moveLastItem);
 
 			Items.Add(new ToolStripSeparator());
 
 			AddNewItem = new ToolStripButton();
 			addNewItem.Image = ResourceImageLoader.Get("nav_plus.png");
-			addNewItem.ToolTipText = Locale.GetText("Add new");
+			addNewItem.ToolTipText = SR.BindingNavigatorAddNewItemText;
 			Items.Add(addNewItem);
 
 			DeleteItem = new ToolStripButton();
 			deleteItem.Image = ResourceImageLoader.Get("nav_delete.png");
-			deleteItem.ToolTipText = Locale.GetText("Delete");
+			deleteItem.ToolTipText = SR.BindingNavigatorDeleteItemText;
 			Items.Add(deleteItem);
 
 			EndInit();

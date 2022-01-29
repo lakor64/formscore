@@ -37,13 +37,13 @@ namespace System.Windows.Forms {
 		public OpenFileDialog ()
 		{
 			form.SuspendLayout ();
-			
-			form.Text = Locale.GetText("Open");
-			
+
+			form.Text = SR.ComboboxDropDownButtonOpenName;
+
 			CheckFileExists = true;
-			
-			OpenSaveButtonText = Locale.GetText("Open");
-			SearchSaveLabel = Locale.GetText("Look in:");
+
+			OpenSaveButtonText = SR.ComboboxDropDownButtonOpenName;
+			SearchSaveLabel = MSR.LookIn;
 			fileDialogType = FileDialogType.OpenFileDialog;
 			
 			form.ResumeLayout (false);
@@ -139,7 +139,7 @@ namespace System.Windows.Forms {
 			get {
 				string title = base.DialogTitle;
 				if (title.Length == 0)
-					title = Locale.GetText("Open");
+					title = SR.ComboboxDropDownButtonOpenName;
 				return title;
 			}
 		}

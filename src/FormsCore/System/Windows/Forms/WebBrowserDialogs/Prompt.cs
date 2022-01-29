@@ -44,7 +44,7 @@ namespace System.Windows.Forms.WebBrowserDialogs
 
 			AddLabel (0, 0, 0, message, -1, -1);
 			AddText (1, 0, 0, text, -1, -1, new EventHandler (onText));
-			AddButton (2, 0, 0, Locale.GetText ("OK"), -1, -1, true, false, new EventHandler (OkClick));
+			AddButton (2, 0, 0, SR.OKCaption, -1, -1, true, false, new EventHandler (OkClick));
 		}
 
 		private void OkClick (object sender, EventArgs e)

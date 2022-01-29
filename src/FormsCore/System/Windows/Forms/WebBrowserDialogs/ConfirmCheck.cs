@@ -44,8 +44,8 @@ namespace System.Windows.Forms.WebBrowserDialogs
 
 			AddLabel (0, 0, 2, text, -1, -1);
 			AddCheck (1, 0, 2, checkMessage, checkState, -1, -1, new EventHandler (CheckedChanged));
-			AddButton (2, 0, 0, Locale.GetText ("OK"), -1, -1, true, false, new EventHandler (OkClick));
-			AddButton (2, 1, 0, Locale.GetText ("Cancel"), -1, -1, false, true, new EventHandler (CancelClick));
+			AddButton (2, 0, 0, SR.OKCaption, -1, -1, true, false, new EventHandler (OkClick));
+			AddButton (2, 1, 0, SR.CancelCaption, -1, -1, false, true, new EventHandler (CancelClick));
 		}
 
 		private void OkClick (object sender, EventArgs e)

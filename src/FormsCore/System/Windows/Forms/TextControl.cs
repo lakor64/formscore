@@ -4371,7 +4371,7 @@ namespace System.Windows.Forms {
 					if (action.type == ActionType.UserActionBegin)
 						return (string) action.data;
 					if (action.type == ActionType.Typing)
-						return Locale.GetText ("Typing");
+						return SR.RichTextBox_IDTyping;
 				}
 				return String.Empty;
 			}
@@ -4383,7 +4383,7 @@ namespace System.Windows.Forms {
 					if (action.type == ActionType.UserActionBegin)
 						return (string) action.data;
 					if (action.type == ActionType.Typing)
-						return Locale.GetText ("Typing");
+						return SR.RichTextBox_IDTyping;
 				}
 				return String.Empty;
 			}

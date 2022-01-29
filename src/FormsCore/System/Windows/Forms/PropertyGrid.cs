@@ -175,14 +175,14 @@ namespace System.Windows.Forms
 			propertypages_toolbarbutton.Click += new EventHandler (toolbarbutton_clicked);
 
 			categorized_toolbarbutton.Style = ToolBarButtonStyle.ToggleButton;
-			categorized_toolbarbutton.ToolTipText = Locale.GetText ("Categorized");
+			categorized_toolbarbutton.ToolTipText = SR.PBRSToolTipCategorized;
 
 			alphabetic_toolbarbutton.Style = ToolBarButtonStyle.ToggleButton;
-			alphabetic_toolbarbutton.ToolTipText = Locale.GetText ("Alphabetic");
+			alphabetic_toolbarbutton.ToolTipText = SR.PBRSToolTipAlphabetic;
 
 			propertypages_toolbarbutton.Enabled = false;
 			propertypages_toolbarbutton.Style = ToolBarButtonStyle.ToggleButton;
-			propertypages_toolbarbutton.ToolTipText = "Property Pages";
+			propertypages_toolbarbutton.ToolTipText = SR.PBRSToolTipPropertyPages;
 
 			properties_tab = CreatePropertyTab (this.DefaultTabType);
 			selected_tab = properties_tab;
@@ -191,7 +191,7 @@ namespace System.Windows.Forms
 			reset_menuitem = context_menu.MenuItems.Add("Reset");
 			reset_menuitem.Click +=new EventHandler(OnResetPropertyClick);
 			context_menu.MenuItems.Add("-");
-			description_menuitem = context_menu.MenuItems.Add("Description");
+			description_menuitem = context_menu.MenuItems.Add(SR.PBRSDocCommentPaneTitle);
 			description_menuitem.Click += new EventHandler(OnDescriptionClick);
 			description_menuitem.Checked = this.HelpVisible;
 			this.ContextMenu = context_menu;
