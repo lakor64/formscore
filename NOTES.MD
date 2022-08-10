@@ -1,5 +1,5 @@
 # Notes
-- [Mono](https://github.com/mono/mono) git commit: 04859508c54a7ac25547bc5bcf4a019f0517aa0b
+- [Mono](https://github.com/mono/mono) git commit: 3d11ccdce6df39bb63c783af28ec9756d1b32db1
 - [Winforms](https://github.com/dotnet/winforms) git commit: 1744f623071b1b46e647db29bb655f508a380a30
 
 ## File sync
